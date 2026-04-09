@@ -1,8 +1,8 @@
 /* ----------------------------------NAV BAR---------------------------- */
-.nav-item{
+#linkNavegacao{
     font-size: 20px;
 }
-.nav-item:hover{
+#linkNavegacao:hover{
     transform: scale(1.2);
 }
 #searchBar{
