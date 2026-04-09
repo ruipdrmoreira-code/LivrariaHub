@@ -14,6 +14,10 @@
     margin-right: 20px;
 }
 /* ----------------------------------Cor------------------------------------------------ */
-#navbar{
-    color: blueviolet;
+#navbar {
+    background-color: rgb(143, 94, 44); 
+}
+
+#navbar .nav-link, #navbar .navbar-brand {
+    color: white;
 }
