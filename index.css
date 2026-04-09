@@ -26,6 +26,7 @@
 /* --------------------------------------------MAIN------------------------------ */
 h1 {
     margin-top: 50px;
+    margin-bottom: 10px;
   font-family: "Bodoni Moda", serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -34,10 +35,15 @@ h1 {
 .box-titulo{
     background-color: rgb(81, 77, 73);
     color: white;
-    padding: 30px;
+    margin-top: 20px;
+    padding: 10px;
    
 }
-----------------------------------------------FOOTER------------------------------ */
+/* ----------------------------------------------FOOTER------------------------------  */
 .footerLink{
-    color: grey;
+    color: rgb(212, 211, 211);
+}
+footer{
+    margin-top: 620px;
+    text-align: center;
 }
