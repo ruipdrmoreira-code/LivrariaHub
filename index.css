@@ -1,9 +1,10 @@
 /* ----------------------------------NAV BAR---------------------------- */
 #linkNavegacao{
     font-size: 20px;
+    transition: transform 0.3s ease;
 }
 #linkNavegacao:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 #searchBar{
     font-size: 20px;

@@ -1,14 +1,12 @@
 // -------------------------DARK/LIGHTMODE---------------------------
-const btn = document.querySelector('#alternarTema');
 const html = document.documentElement;
+const dark = document.querySelector('#temaDark');
+const light = document.querySelector('#temaLight');
 
-btn.addEventListener('click', () => {
-  if (html.getAttribute('data-bs-theme') === 'dark') {
-    html.setAttribute('data-bs-theme', 'light');
-    btn.textContent = 'Dark';
-  } else {
-    html.setAttribute('data-bs-theme', 'dark');
-    btn.textContent = 'Light';
-  }
-});
+async function mudarTema(t) {
+    html.setAttribute('data-bs-theme', t);
+}
+
+dark.addEventListener('click', () => mudarTema('dark'));
+light.addEventListener('click', () => mudarTema('light'));
 // --------------------------------------------------------------------------
