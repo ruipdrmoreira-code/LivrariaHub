@@ -43,6 +43,9 @@ h1 {
 .footerLink{
     color: rgb(212, 211, 211);
 }
+.footerLink:hover{
+    color: rgb(212, 211, 211);
+}
 footer{
     margin-top: 620px;
     text-align: center;
