@@ -40,7 +40,7 @@ h1 {
 .box-titulo{
     background-color: rgb(81, 77, 73);
     color: white;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px;
 }
 .form-control-me-2{
@@ -58,7 +58,7 @@ footer{
     text-align: center;
 }
 /* ------------------------------------------FORMULARIO------------------------------ */
-.form-select{
+.col-12-col-md-8-col-lg-5{
     background-color: rgb(154, 93, 18);
 font-size: 22px;
 margin-top: 20px;
