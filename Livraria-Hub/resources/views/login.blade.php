@@ -50,7 +50,7 @@
  </main>
 <!-- -------------------------------------------------------------Footer---------------------------------------------------- -->
     <footer>
-      <script src="./resources/js/app.js"></script>
+    <script src="{{ asset('js/app.js') }}?v={{ time() }}"></script>
       Copyright &copy; 2024 - Livraria Hub Portugal |
       <a href="#" class="linkFooter">Política de privacidade</a> |
       <a href="#" class="linkFooter">Termos de licença</a>
