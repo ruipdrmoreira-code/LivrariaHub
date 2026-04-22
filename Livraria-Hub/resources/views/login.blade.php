@@ -7,7 +7,7 @@
     <title>LibriFlow | Início</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="./resources/css/app.css" />
   </head>
   <body>
 
@@ -50,7 +50,7 @@
  </main>
 <!-- -------------------------------------------------------------Footer---------------------------------------------------- -->
     <footer>
-      <script src="indexx.js"></script>
+      <script src="./resources/js/app.js"></script>
       Copyright &copy; 2024 - Livraria Hub Portugal |
       <a href="#" class="linkFooter">Política de privacidade</a> |
       <a href="#" class="linkFooter">Termos de licença</a>
