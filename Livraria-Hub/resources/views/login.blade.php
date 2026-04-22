@@ -44,17 +44,40 @@
       </div>
     </div>
   </nav>
-  <header>
 
-  </header>
-  <main>
+  <header></header>
 
+  <main class="d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+    <div class="caixa-login">
+      <h2>Entrar</h2>
+      <p class="subtitulo">Bem-vindo(a) de volta</p>
+
+      <form>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="ExemploAqui@email.com" />
+
+        <label for="password">Palavra-passe</label>
+        <input type="password" id="password" placeholder="••••••••" />
+
+        <button type="submit" class="btn-entrar">Entrar</button>
+      </form>
+
+      <hr class="divisor" />
+
+      <div class="rodape-login">
+        Não tens conta? <a href="registro.html">Regista-te aqui</a>
+      </div>
+    </div>
   </main>
+
   <!-- -------------------------------------------------------------Footer---------------------------------------------------- -->
   <footer>
-    <script src="{{ asset('js/app.js') }}?v={{ time() }}"></script>
     Copyright &copy; 2024 - Livraria Hub Portugal |
     <a href="#" class="linkFooter">Política de privacidade</a> |
     <a href="#" class="linkFooter">Termos de licença</a>
   </footer>
+
+  <script src="{{ asset('js/app.js') }}?v={{ time() }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>

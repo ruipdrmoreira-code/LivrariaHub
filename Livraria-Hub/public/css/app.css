@@ -193,3 +193,100 @@ footer {
 .linkFooter:hover {
   color: rgb(23, 156, 222);
 }
+/*--------------------------------------Parte do login------------------------------------------*/ 
+
+.caixa-login {
+  background: linear-gradient(160deg, rgb(27, 15, 102), rgb(39, 26, 159));
+  border: 1px solid rgba(39, 0, 236, 0.25);
+  border-radius: 16px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.caixa-login h2 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.caixa-login p.subtitulo {
+  color: rgba(200, 190, 255, 0.7);
+  font-size: 14px;
+  margin-bottom: 28px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  color: rgba(200, 190, 255, 0.8);
+  margin-bottom: 6px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(43, 0, 255, 0.3);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: rgba(41, 1, 239, 0.7);
+  box-shadow: 0 0 0 3px rgba(130, 100, 255, 0.2);
+}
+
+input::placeholder {
+  color: rgba(200, 190, 255, 0.35);
+}
+
+.btn-entrar {
+  width: 100%;
+  padding: 11px;
+  background-color: rgb(48, 58, 145);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 4px;
+}
+
+.btn-entrar:hover {
+  background-color: rgb(60, 72, 175);
+}
+
+.rodape-login {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgba(200, 190, 255, 0.6);
+}
+
+.rodape-login a {
+  color: rgba(160, 140, 255, 0.9);
+  text-decoration: none;
+}
+
+.rodape-login a:hover {
+  color: white;
+}
+
+.divisor {
+  border: none;
+  border-top: 1px solid rgba(150, 130, 255, 0.15);
+  margin: 24px 0;
+}
