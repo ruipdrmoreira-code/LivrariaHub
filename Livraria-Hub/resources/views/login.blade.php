@@ -42,3 +42,17 @@
         </div>
       </div>
     </nav>
+ <header>
+
+ </header>
+ <main>
+
+ </main>
+<!-- -------------------------------------------------------------Footer---------------------------------------------------- -->
+    <footer>
+      <script src="indexx.js"></script>
+      Copyright &copy; 2024 - Livraria Hub Portugal |
+      <a href="#" class="linkFooter">Política de privacidade</a> |
+      <a href="#" class="linkFooter">Termos de licença</a>
+    </footer>
+    </body>
