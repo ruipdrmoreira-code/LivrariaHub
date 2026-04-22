@@ -1,4 +1,4 @@
-import './bootstrap';
+
 // --------------------------------------BOTAO TEMA----------------------------------
 tema.onclick = () => {
   const el = document.documentElement;
