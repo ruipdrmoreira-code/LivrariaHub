@@ -3,9 +3,16 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
-// Rota inicial (podes manter ou apagar se não quiseres a página inicial)
+
 Route::get('/', function () {
     return view('login');
 });
 
-Route::post('/login', [AuthController::class, 'login'])->name('login');
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/registo', function () {
+    return view('registo');
+});

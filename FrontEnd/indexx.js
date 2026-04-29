@@ -1,7 +1,6 @@
-
-
 const lst = document.getElementById("lstLiv");
 const bsc = document.getElementById("nmrBusca");
+const btnBsc = document.getElementById("btnBusca"); 
 const selecEditora = document.getElementById("filtroEditora");
 const selecAno = document.getElementById("filtroAno");
 const selecTipo = document.getElementById("filtroTipo");
@@ -9,7 +8,6 @@ const selecDiscip = document.getElementById("filtroDisciplina");
 const tema = document.getElementById("btnTema");
 const btnLimpar = document.getElementById("btnLimpar");
 const contadorLivros = document.getElementById("contadorLivros");
-
 
 const dds = [
   { tit: "Matemática A 10º", editora: "1", ano: "6", tipo: "4", discip: "2", prc: "18.50", img: "" },
@@ -19,7 +17,6 @@ const dds = [
   { tit: "Ciências Naturais 8º", editora: "2", ano: "4", tipo: "4", discip: "5", prc: "14.50", img: "" },
   { tit: "Caderno de Inglês 9º", editora: "1", ano: "5", tipo: "5", discip: "4", prc: "9.90", img: "" },
 ];
-
 
 function render(arr) {
   if (arr.length === 0) {
@@ -44,7 +41,7 @@ function render(arr) {
   `).join("");
 }
 
-// --------------------------parte dos filtros-----------------------------------------------
+// --------------------------------------PARTE DOS FILTROS----------------------------------
 function filtrar() {
   const txt = bsc.value.toLowerCase();
   const editora = selecEditora.value;
@@ -65,7 +62,6 @@ function filtrar() {
   render(res);
 }
 
-
 function limparFiltros() {
   bsc.value = "";
   selecEditora.value = "";
@@ -75,8 +71,15 @@ function limparFiltros() {
   filtrar();
 }
 
+// ------------------------------------BARRA DE PESQUISA DA NAVBAR--------------------------
+btnBsc.onclick = filtrar; 
 
-bsc.oninput = filtrar;
+bsc.onkeydown = (e) => { 
+  if (e.key === "Enter") {
+    filtrar();
+  }
+};
+
 selecEditora.onchange = filtrar;
 selecAno.onchange = filtrar;
 selecTipo.onchange = filtrar;
@@ -85,9 +88,9 @@ btnLimpar.onclick = limparFiltros;
 
 // --------------------------------------BOTAO TEMA----------------------------------
 tema.onclick = () => {
-  const el = document.documentElement;
-  const nvo = el.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
-  el.setAttribute("data-bs-theme", nvo);
+  const elemento = document.documentElement;
+  const nvo = elemento.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
+  elemento.setAttribute("data-bs-theme", nvo);
 };
 
 render(dds);
