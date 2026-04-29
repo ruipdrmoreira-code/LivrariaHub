@@ -25,28 +25,27 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navConteudo">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Livros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-        </ul>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="{{ route('/Inicio') }}">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('Livros') }}">Livros</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('Sobre') }}">Sobre</a></li>
+      </ul>
 
-        <div class="d-flex align-items-center gap-2">
-          <input type="text" id="nmrBusca" class="form-control" placeholder="Procurar..." style="height: 38px;">
-          <button class="btn btn-outline-light d-flex align-items-center justify-content-center" type="button"
-            id="btnBusca" style="height: 38px; width: 40px;">
-            <i class="bi bi-search"></i>
-          </button>
-          <button class="btn btn-outline-light d-flex align-items-center justify-content-center" id="btnTema"
-            style="height: 38px; width: 40px;">
-            <i class="bi bi-circle-half"></i>
-          </button>
-        </div>
+      <div class="d-flex align-items-center gap-2">
+        <input type="text" id="nmrBusca" class="form-control" placeholder="Procurar..." style="height: 38px;">
+        <button class="btn btn-outline-light d-flex align-items-center justify-content-center" type="button"
+          id="btnBusca" style="height: 38px; width: 40px;">
+          <i class="bi bi-search"></i>
+        </button>
+        <button class="btn btn-outline-light d-flex align-items-center justify-content-center" id="btnTema"
+          style="height: 38px; width: 40px;">
+          <i class="bi bi-circle-half"></i>
+        </button>
       </div>
     </div>
+    </div>
   </nav>
- <!-- -----------------------------------------------Formulário de Login--------------------------------------------->
+  <!-- -----------------------------------------------Formulário de Login--------------------------------------------->
   <main class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
     <div class="card-login shadow-lg">
       <div class="header-card">
@@ -82,7 +81,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- <script type="module" src="/js/app.js?v={{ time() }}"></script>
+  <script type="module" src="/js/app.js?v={{ time() }}"></script>
 
 </body>
 

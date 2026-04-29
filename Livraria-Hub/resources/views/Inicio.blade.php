@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/livro.png?v=1" type="image/x-icon" />
+     <link rel="shortcut icon" href="{{ asset('img/livro.png') }}" type="image/x-icon">
     <title>Livraria Hub | Início</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -26,9 +26,9 @@
 
             <div class="collapse navbar-collapse" id="navConteudo">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('Inicio') }}">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('Livros') }}">Livros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('Sobre') }}">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('inicio') }}">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('login') }}">Livros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('registo') }}">Sobre</a></li>
                 </ul>
 
                 <div class="d-flex align-items-center gap-2">

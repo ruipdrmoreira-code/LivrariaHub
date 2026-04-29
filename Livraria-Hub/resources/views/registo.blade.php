@@ -26,11 +26,11 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navConteudo">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Livros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-        </ul>
+           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="{{ route('/Inicio')  }}">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('Livros') }}">Livros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('Sobre') }}">Sobre</a></li>
+                </ul>
 
         <div class="d-flex align-items-center gap-2">
           <input type="text" id="nmrBusca" class="form-control" placeholder="Procurar..." style="height: 38px;">
