@@ -2,22 +2,22 @@
 <html lang="pt-pt" data-bs-theme="dark">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="{{ asset('img/livro.png') }}" type="image/x-icon">
-  <title>Livraria Hub | Registo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="{{ asset('img/livro.png') }}" type="image/x-icon">
+    <title>Livraria Hub | Registo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}" />
 </head>
 
 <body>
 
-  <!-- -----------------------------------------------NAVBAR--------------------------------------------->
-  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+    <!-- -----------------------------------------------NAVBAR--------------------------------------------->
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="{{ asset('img/livro.png') }}" width="40px" />
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="{{ asset('img/livro.png') }}" width="40px" class="me-2" />
         Livraria Hub
       </a>
 
@@ -31,48 +31,51 @@
           <li class="nav-item"><a class="nav-link" href="#">Livros</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
         </ul>
+
+        <div class="d-flex align-items-center gap-2">
+          <input type="text" id="nmrBusca" class="form-control" placeholder="Procurar..." style="height: 38px;">
+          <button class="btn btn-outline-light d-flex align-items-center justify-content-center" type="button"
+            id="btnBusca" style="height: 38px; width: 40px;">
+            <i class="bi bi-search"></i>
+          </button>
+          <button class="btn btn-outline-light d-flex align-items-center justify-content-center" id="btnTema"
+            style="height: 38px; width: 40px;">
+            <i class="bi bi-circle-half"></i>
+          </button>
+        </div>
       </div>
     </div>
   </nav>
 
-  <!-- -----------------------------------------------Formulário de Registo--------------------------------------------->
-  <main class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
-    <div class="caixa-login">
+    <!-- -----------------------------------------------Formulário de Registo--------------------------------------------->
+    <main class="d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+        <div class="caixa-login">
+            <h2>Criar conta</h2>
+            <p class="subtitulo">Regista-te para começar</p>
+            <form>
+                <label for="usrName">Utilizador</label>
+                <input type="text" id="usrName" placeholder="Nome de usuário" required />
+                <label for="emailUsr">Email</label>
+                <input type="email" id="emailUsr" placeholder="exemplo@email.pt" required />
+                <label for="passUsr">Palavra-passe</label>
+                <input type="password" id="passUsr" placeholder="••••••••" required />
+                <button type="submit" class="btn-entrar">Criar conta</button>
+            </form>
+            <hr class="divisor" />
+            <div class="rodape-login">
+                Já possui conta? <a href="/login">Entra aqui</a>
+            </div>
+        </div>
+    </main>
 
-      <h2>Criar conta</h2>
-      <p class="subtitulo">Regista-te para começar.</p>
-
-      <form>
-        <label for="usrName">Utilizador</label>
-        <input type="text" id="usrName" placeholder="ex: joao123" required />
-
-        <label for="emailUsr">Email</label>
-        <input type="email" id="emailUsr" placeholder="exemplo@email.pt" required />
-
-        <label for="passUsr">Palavra-passe</label>
-        <input type="password" id="passUsr" placeholder="••••••••" required />
-
-        <button type="submit" class="btn-entrar">Criar conta</button>
-      </form>
-
-      <hr class="divisor" />
-
-      <div class="rodape-login">
-        Já tens conta? <a href="/login">Entra aqui</a>
-      </div>
-
-    </div>
-  </main>
-
-  <!-- -------------------------------------------------------------Footer---------------------------------------------------- -->
-  <footer>
-    Copyright &copy; 2024 - Livraria Hub Portugal |
-    <a href="#" class="linkFooter">Política de privacidade</a> |
-    <a href="#" class="linkFooter">Termos de licença</a>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="{{ asset('js/app.js') }}"></script>
-
+    <!-- -------------------------------------------------------------Footer---------------------------------------------------- -->
+    <footer>
+        Copyright &copy; 2024 - Livraria Hub Portugal |
+        <a href="#" class="linkFooter">Política de privacidade</a> |
+        <a href="#" class="linkFooter">Termos de licença</a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/js/app.js?v={{ time() }}"></script>
 </body>
+
 </html>
