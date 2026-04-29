@@ -1,0 +1,65 @@
+/* ----------------------------------NAV BAR---------------------------- */
+#linkNavegacao{
+    font-size: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+      
+}
+#linkNavegacao:hover{
+    transform: scale(1.1);
+}
+#searchBar{
+    font-size: 20px;
+}
+#alternarTema{
+    font-size: 30px;
+    margin-right: 20px;
+}
+#navbar {
+    background-color: rgb(143, 94, 44); 
+}
+
+#navbar .nav-link, #navbar .navbar-brand {
+    color: white;
+    font-size: 22px;
+  
+}
+.navbar-brand{
+    text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------MAIN------------------------------ */
+h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.box-titulo{
+    background-color: rgb(81, 77, 73);
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+}
+.form-control-me-2{
+    font-size: 20px;
+}
+/* ----------------------------------------------FOOTER------------------------------  */
+.footerLink{
+    color: rgb(212, 211, 211);
+}
+.footerLink:hover{
+    color: rgb(212, 211, 211);
+}
+footer{
+    margin-top: 620px;
+    text-align: center;
+}
+/* ------------------------------------------FORMULARIO------------------------------ */
+.col-12-col-md-8-col-lg-5{
+    background-color: rgb(154, 93, 18);
+font-size: 22px;
+margin-top: 20px;
+}
