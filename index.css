@@ -2,6 +2,7 @@
 #linkNavegacao{
     font-size: 20px;
     display: inline-block;
+    font-weight: 500;
     transition: transform 0.3s ease;
       
 }
