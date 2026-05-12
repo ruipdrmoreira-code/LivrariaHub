@@ -84,10 +84,10 @@ selecDiscip.onchange = filtrar;
 btnLimpar.onclick = limparFiltros;
 
 // --------------------------------------BOTAO TEMA----------------------------------
-tema.onclick = () => {
-  const el = document.documentElement;
-  const nvo = el.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
-  el.setAttribute("data-bs-theme", nvo);
-};
+const btnTema = document.getElementById("btnTema");
 
-render(dds);
+btnTema.onclick = () => {
+  const elemento = document.documentElement;
+  const novoTema = elemento.getAttribute("data-bs-theme") === "dark" ? "light" : "dark";
+  elemento.setAttribute("data-bs-theme", novoTema);
+};
