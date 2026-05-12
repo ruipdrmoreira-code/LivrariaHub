@@ -5,7 +5,13 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('login');
-});
+    return view('inicio');
+})->name('inicio'); 
 
-Route::post('/login', [AuthController::class, 'login'])->name('login');
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/registo', function () {
+    return view('registo');
+})->name('registo');
